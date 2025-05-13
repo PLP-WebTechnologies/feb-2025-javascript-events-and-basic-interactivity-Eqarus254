@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JS Event Playground</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <h1>🎉 Welcome to the JS Event Playground 🎉</h1>
+
+  <!-- Event Handling -->
+  <button id="changeTextBtn">Click me!</button>
+  <div id="hoverBox">Hover over me!</div>
+  <input type="text" id="keyInput" placeholder="Type something..."/>
+  <button id="secretBtn">Double-click or long-press me</button>
+
+  <!-- Interactive Elements -->
+  <h2>Image Gallery</h2>
+  <div class="gallery">
+    <img src="pexels-svenja-gross-1663970815-31891109.jpg" id="mainImg" />
+    <div class="thumbnails">
+      <img src="pexels-bingqian-li-230971044-28309193.jpg" class="thumb"/>
+      <img src="pexels-kateryna-tsurik-505461005-31886166.jpg" class="thumb"/>
+      <img src="pexels-nasirun-khan-102497153-9499417.jpg" class="thumb"/>
+    </div>
+  </div>
+
+  <h2>Accordion</h2>
+  <div class="accordion">
+    <div class="section">
+      <button class="accordion-btn">Section 1</button>
+      <div class="panel">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+    </div>
+    <div class="section">
+      <button class="accordion-btn">Section 2</button>
+      <div class="panel">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+    </div>
+  </div>
+
+  <!-- Form Validation -->
+  <h2>Signup Form</h2>
+  <form id="signupForm" novalidate>
+    <label>Email: <input type="email" id="email" required /></label><br/>
+    <label>Password: <input type="password" id="password" required /></label><br/>
+    <button type="submit">Submit</button>
+    <p id="formFeedback"></p>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
